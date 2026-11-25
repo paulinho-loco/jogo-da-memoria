@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>🧠 Jogo da Memória</h1>
+        <p>Encontre os pares e vença seu adversário!</p>
+
+        <div class="placar">
+            <div>
+                <label>Jogador 1</label>
+                <input id="nome1" value="Jogador 1">
+                <h2 id="pontos1">0</h2>
+            </div>
+
+            <div>
+                <label>Jogador 2</label>
+                <input id="nome2" value="Jogador 2">
+                <h2 id="pontos2">0</h2>
+            </div>
+        </div>
+
+        <h3 id="vez">Vez do Jogador 1</h3>
+        <p>Jogadas: <span id="jogadas">0</span></p>
+
+        <div class="tabuleiro" id="tabuleiro"></div>
+
+        <h3 id="mensagem">Encontre os pares!</h3>
+
+        <button onclick="reiniciar()">Reiniciar Jogo</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
